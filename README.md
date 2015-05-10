@@ -73,3 +73,14 @@ component.addEventListener('stop', function(ev) {
 	// do something
 });
 ```
+
+#### `bpm`
+
+This event will be dispatched when the user interacts with the `bpm` slider. To listen for `bpm` events on this component, add an event listener:
+
+```javascript
+component.addEventListener('bpm', function(ev) {
+	// do something with the bpm value
+	console.log('new bpm value', bpm.detail.value);
+});
+
