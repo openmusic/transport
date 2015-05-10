@@ -12,6 +12,9 @@ componentElement.addEventListener('stop', function() {
 	log('stop');
 });
 
+componentElement.addEventListener('bpm', function(ev) {
+	log('new bpm: ' + ev.detail.value);
+});
 
 function log(text) {
 	textLog.innerHTML += text + '\n';

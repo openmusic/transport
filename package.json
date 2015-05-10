@@ -13,7 +13,7 @@
   "keywords": [
     "web components",
     "audio",
-	"transport"
+    "transport"
   ],
   "author": "sole",
   "license": "Apache 2",
@@ -25,5 +25,8 @@
     "gulp": "^3.8.11",
     "openmusic-demo-gulp-tasks": "^1.5.0",
     "webcomponents-lite": "^0.6.0"
+  },
+  "dependencies": {
+    "openmusic-slider": "^2.0.0"
   }
 }
