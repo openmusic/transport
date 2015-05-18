@@ -81,6 +81,6 @@ This event will be dispatched when the user interacts with the `bpm` slider. To 
 ```javascript
 component.addEventListener('bpm', function(ev) {
 	// do something with the bpm value
-	console.log('new bpm value', bpm.detail.value);
+	console.log('new bpm value', ev.detail.value);
 });
 
