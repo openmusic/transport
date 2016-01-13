@@ -6,21 +6,9 @@
 
 ## Installation
 
-Grab `index.js` from the repo or do `npm install openmusic-transport`.
+Since this component requires other components, it is not possible to use it without a build step. Please do `npm install openmusic-transport` to get it installed along with all required dependencies.
 
-### If not using any package manager
-
-Include `index.js` before you use the component:
-
-```javascript
-<script src="index.js"></script>
-```
-
-It will be registered automatically as `openmusic-transport`, so you can `document.createElement('openmusic-transport')` or just have `<openmusic-transport>` elements in your HTML source.
-
-### If using npm
-
-You need to load the module and then register it--it is not automatically registered!
+To use it, you will need to load and then register the module--it is not automatically registered!
 
 ```javascript
 require('openmusic-transport').register('openmusic-transport');
@@ -31,8 +19,6 @@ But you could even register it with other name, for example:
 ```javascript
 require('openmusic-transport').register('mega-transport');
 ```
-
-Up to you.
 
 ## Usage
 
