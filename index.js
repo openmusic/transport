@@ -136,7 +136,7 @@
 	} else if(typeof module !== 'undefined' && module.exports) {
 		module.exports = component;
 	} else {
-		component.register('openmusic-web-component-template'); // automatic registration
+		component.register('openmusic-transport'); // automatic registration
 	}
 
 }).call(this);
