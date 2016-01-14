@@ -2,6 +2,8 @@
 
 > A transport control web component
 
+![Screenshot](./demo/screenshot.png)
+
 [![Install with NPM](https://nodei.co/npm/openmusic-transport.png?downloads=true&stars=true)](https://nodei.co/npm/openmusic-transport/)
 
 ## Installation
@@ -22,7 +24,29 @@ require('openmusic-transport').register('mega-transport');
 
 ## Usage
 
-Have a look at `demo/demo.js` for an example that does things in order to things.
+Have a look at `demo/demo.js` for an example that listens to the events the transport dispatches, and prints the info to a text field.
+
+To build the demo, run `npm run build`, and then open `demo/index.html` in your browser.
+
+### Styling
+
+The component doesn't have any styling on its own.
+
+To style it, you can write CSS rules targetting the `openmusic-transport` element (or whichever other name you chose when registering, e.g. `mega-transport`), and also rules for the components inside it. For example:
+
+```css
+openmusic-transport {
+	display: inline-block;
+	padding: 1rem;
+	border: 1px solid red;
+}
+
+openmusic-transport input[type=button] {
+}
+
+```
+
+The demo has a stylesheet for styling the component and its children elements.
 
 <!--
 ### Attributes

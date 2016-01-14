@@ -1,3 +1,4 @@
+require('webcomponents-lite');
 require('../').register('openmusic-transport');
 
 var ac = new AudioContext();

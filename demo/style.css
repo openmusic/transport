@@ -10,3 +10,46 @@ html, body {
 	padding: 0;
 }
 
+openmusic-transport {
+	display: inline-block;
+	border: 1px solid #666;
+	padding: 0.5rem;
+	border-radius: 6px;
+	background: #efefef;
+	font-family: Helvetica, Arial, sans;
+}
+
+openmusic-transport input, openmusic-transport button {
+	font-size: inherit;
+}
+
+openmusic-transport button {
+	background: #666;
+	color: #fff;
+	padding: 0.25rem;
+	border-radius: 0.5rem;
+	border: 0px;
+	margin-right: 0.25rem;
+}
+
+openmusic-transport button[class=play] {
+	background: #090;
+}
+
+openmusic-transport button[class=play]:disabled {
+	background: #6DAA6D;
+}
+openmusic-transport button[class=stop] {
+	background: #900;
+}
+
+openmusic-transport button[class=stop]:disabled {
+	background: #AA6D6D;
+}
+openmusic-transport button:enabled {
+	cursor: pointer;
+}
+openmusic-transport button:disabled {
+	cursor: not-allowed;
+}
+
